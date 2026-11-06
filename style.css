@@ -1,0 +1,91 @@
+
+/* Mengatur semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur tampilan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kotak kalkulator */
+.calculator {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Judul kalkulator */
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Layar kalkulator */
+#display {
+    width: 100%;
+    height: 65px;
+    margin-bottom: 15px;
+    background: #eee;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 28px;
+    padding: 10px;
+}
+
+/* Susunan tombol */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Semua tombol */
+button {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
+
+/* Efek saat tombol disentuh */
+button:hover {
+    background: #666;
+}
+
+/* Tombol operator */
+.operator {
+    background: #ff9800;
+}
+
+/* Tombol hapus */
+.special {
+    background: #e53935;
+}
+
+/* Tombol hasil */
+.equal {
+    background: #2196f3;
+    grid-row: span 2;
+    height: auto;
+}
+
+/* Tombol angka nol */
+.zero {
+    grid-column: span 2;
+}
